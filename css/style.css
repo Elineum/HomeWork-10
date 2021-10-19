@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    background-color: #FDDE7E;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    background-color: white;
+    text-align: center;
+    height: 440px;
+    width: 260px;
+    margin: 0 10px;
+    box-shadow: 0 0 1px black;
+    font-family: 'Miso', 'Miso Bold', sans-serif;
+    transition: all ease-in-out 0.3s;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    transition: all ease-in-out 0.3s;
+}
+
+a h1 {
+    color: green;
+    font-size: 70px;
+    padding-top: 20px;
+    transition: all ease-in-out 0.3s;
+}
+
+a h2 {
+    padding-top: 20px;
+    font-size: 56px;
+    font-weight: 400;
+    transition: all ease-in-out 0.3s;
+}
+
+a p {
+    font-size: 25px;
+    font-family: 'Miso Light', sans-serif;
+    transition: all ease-in-out 0.3s;
+}
+
+a div:last-child {
+    padding: 15px 50px;
+    transition: all ease-in-out 5s;
+}
+
+div img {
+    padding-top: 20px;
+    padding-left: 15px;
+    transition: all ease-in-out 0.3s;
+}
+
+.gold {
+    min-height: 500px;
+}
+
+.gold h1 {
+    padding-top: 40px;
+}
+
+.gold img {
+    padding-top: 30px;
+}
+
+.gold h2 {
+    padding-top: 25px;
+}
+
+.gold p {
+    padding-top: 10px;
+}
+
+.gold, .silver, .bronze {
+    transition: all ease-in-out 0.3s;
+}
+
+a:hover {
+    box-shadow: 0px 0px 10px blue;
+}
+
+li:hover {
+    transform: scale(1.01);
+}
+
+li:hover h2, li:hover h1 {
+    transform: scale(1.1);
+}
+
+li:hover p {
+    transition: all ease-in-out 0.1s
+}
+
+.gold:hover img, .gold:hover h2 {
+    filter: drop-shadow(0px 0px 3px yellow);
+    text-shadow: 0px 0px 1px yellow;
+}
+
+.bronze:hover img, .bronze:hover h2 {
+    filter: drop-shadow(0px 0px 3px orange);
+    text-shadow: 0px 0px 3px orange;
+}
+
+.silver:hover img, .silver:hover h2 {
+    filter: drop-shadow(0px 0px 3px silver);
+    text-shadow: 0px 0px 3px silver;
+}
+
+@font-face {
+    font-family: "Miso";
+    src: url(../font/miso.otf);
+}
+
+@font-face {
+    font-family: "Miso Bold";
+    src: url(../font/miso-bold.otf);
+}
+
+@font-face {
+    font-family: "Miso Light";
+    src: url(../font/miso-light.otf);
+}
